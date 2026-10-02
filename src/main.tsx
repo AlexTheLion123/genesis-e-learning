@@ -8,7 +8,7 @@ import './styles.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/app">
       <DemoProvider>
         <App />
         <Toaster position="bottom-right" richColors />
