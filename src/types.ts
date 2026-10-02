@@ -28,12 +28,20 @@ export interface User {
   lastActive: string
 }
 
+export interface LessonVideo {
+  youtubeId: string
+  title: string
+  author: string
+  seconds: number
+}
+
 export interface CourseModule {
   id: string
   title: string
   duration: number
   kind: 'lesson' | 'assessment'
   content: string[]
+  video?: LessonVideo
 }
 
 export interface QuizQuestion {

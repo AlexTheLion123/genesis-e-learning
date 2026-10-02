@@ -6,7 +6,7 @@ export const tenants: BankTenant[] = [
 ]
 
 const amlModules = [
-  { id: 'aml-1', title: 'Why AML matters', duration: 7, kind: 'lesson' as const, content: ['Money laundering exposes banks to legal, financial, and reputational harm.', 'Every employee contributes by following customer due diligence procedures and raising concerns through the approved channel.'] },
+  { id: 'aml-1', title: 'Why AML matters', duration: 7, kind: 'lesson' as const, content: ['Money laundering exposes banks to legal, financial, and reputational harm.', 'Every employee contributes by following customer due diligence procedures and raising concerns through the approved channel.'], video: { youtubeId: 'W-VVV1lkbfA', title: 'Money laundering and terror financing: What is the FATF?', author: 'OECD', seconds: 227 } },
   { id: 'aml-2', title: 'Know your customer', duration: 10, kind: 'lesson' as const, content: ['Customer due diligence confirms who the customer is and why they need the account.', 'Risk profiles must remain current. Update records when ownership, activity, or expected transaction patterns change.'] },
   { id: 'aml-3', title: 'Recognising red flags', duration: 9, kind: 'lesson' as const, content: ['A red flag is a fact or pattern that requires closer review. One unusual transaction does not prove wrongdoing.', 'Examples include unexplained cash activity, rapid movement of funds, and reluctance to provide required information.'] },
   { id: 'aml-4', title: 'Escalation and reporting', duration: 8, kind: 'lesson' as const, content: ['Follow the bank’s internal escalation process promptly and record the facts clearly.', 'Never alert a customer that a suspicious activity report may be considered.'] },

@@ -45,6 +45,6 @@ Before the link goes out:
 - Choose either fictional bank and enter as an employee learner or HR administrator.
 - Use the role switcher in the user menu to move between portals. "Leave workspace" returns to the workspace picker.
 - Progress, quiz results, certificates, assignments, and preferences are stored in browser `localStorage`.
-- All data and assets are bundled locally. The running app makes no external requests.
+- All data and assets are bundled locally, with one exception: Lesson 1 of the AML course embeds a third-party video (YouTube ID `W-VVV1lkbfA`, "Money laundering and terror financing: What is the FATF?", OECD). Nothing is requested from YouTube until the learner presses play, and the Low bandwidth toggle hides it. It uses YouTube's official player only; the video is not downloaded or hosted here. Check it is still embeddable before outreach. Production bank content should be self-hosted or come from the bank's own library, since many bank networks block YouTube.
 
 This prototype does not implement real authentication, synchronization, regulatory submission, or offline server synchronization.
