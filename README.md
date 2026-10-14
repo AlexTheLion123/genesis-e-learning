@@ -1,6 +1,6 @@
 # Banking Learning Hub
 
-A frontend-only prototype for a shared, tenant-aware banking learning platform. It includes a learner experience, assessments and certificates, plus an HR administrator experience for roster imports, course assignments, dashboards, and evidence reports.
+A frontend-only prototype for a shared, tenant-aware banking learning platform. It includes a learner experience, assessments and certificates, plus an HR administrator experience for roster imports, course assignments, dashboards, and training reports.
 
 The site has two parts:
 
@@ -34,7 +34,7 @@ Plain HTML, CSS and a small script, no framework: `index.html`, `site/styles.css
 Before the link goes out:
 
 - The demo form checks the fields and then says "Preview only", because no endpoint is set. Set `FORM_ENDPOINT` in `site/main.js`.
-- Yellow `TBC` and `Placeholder` chips mark unconfirmed items (the 2% figure, data-location wording, contact details, privacy policy). Remove the `.ph` elements once each is resolved.
+- Yellow `TBC` and `Placeholder` chips mark unconfirmed items (trial size, data-location wording, contact details, privacy policy). Remove the `.ph` elements once each is resolved.
 - `index.html` has `noindex`. Remove it at launch.
 - Roboto is not bundled. The page uses the system font, which is Roboto on Android.
 
@@ -47,4 +47,4 @@ Before the link goes out:
 - Progress, quiz results, certificates, assignments, and preferences are stored in browser `localStorage`.
 - All data and assets are bundled locally, with one exception: Lesson 1 of the AML course embeds a third-party video (YouTube ID `W-VVV1lkbfA`, "Money laundering and terror financing: What is the FATF?", OECD). Nothing is requested from YouTube until the learner presses play, and the Low bandwidth toggle hides it. It uses YouTube's official player only; the video is not downloaded or hosted here. Check it is still embeddable before outreach. Production bank content should be self-hosted or come from the bank's own library, since many bank networks block YouTube.
 
-This prototype does not implement real authentication, synchronization, regulatory submission, or offline server synchronization.
+This prototype does not implement real authentication, synchronization, or offline server synchronization.
